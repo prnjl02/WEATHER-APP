@@ -1,0 +1,42 @@
+<body class="bg-img">
+    <br>
+  
+    <h2>Please Login!</h2>
+  
+    <form ngForms style="text-align:center;">
+  
+      <!-- <div class="imgcontainer">
+    
+    </div> -->
+  
+      <!-- <div class="container"> -->
+      <label for="uname">
+        <b>Username:</b>
+      </label>
+      <br>
+  
+      <input type="text"  style="height:20px;"name="username" #user required>
+      <br>
+  
+      <label for="psw">
+        <b>Password:</b>
+      </label>
+  
+      <br>
+      <input type="password" name="password" #pass required style="height:20px;">
+      <br>
+  
+      <button class="button" type="submit" (click)="redirect(user.value,pass.value)">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <!-- </div> -->
+      <!-- 
+    <div class="container" style="background-color:#f1f1f1"> -->
+      <button type="reset" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#" style="text-decoration:underline;">Forgot</a>
+        <a href="#" style="text-decoration:underline;">password?</a>
+      </span>
+      <!-- </div> -->
+    </form>
+  </body>
