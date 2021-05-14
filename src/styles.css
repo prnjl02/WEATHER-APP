@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+.bg-img {
+  background-image: url("src/app/login/Hopetoun_falls.jpg");
+  background-size: cover;
+  /* height:100%;
+  width:100%; */
+  margin: -20px -6px;
+}
