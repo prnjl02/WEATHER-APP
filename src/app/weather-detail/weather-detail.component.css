@@ -3,7 +3,9 @@ new code
 */
 
 .heading {
-  margin-left: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container {
   display: flex;
@@ -44,5 +46,12 @@ img {
   border: 2px solid white;
 }
 .cityName {
-  margin-left: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardItemLayout {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 31%;
 }

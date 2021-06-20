@@ -14,7 +14,7 @@
 <h5 class="cityName" *ngIf="showExceptionMessage">{{ exceptionMessage }}</h5>
 <div class="cardSectionContainer" *ngFor="let d of fulldata">
   <div class="card .d-flex cardLayout">
-    <div class="card-body" style="padding: 4%">
+    <div class="card-body cardItemLayout">
       <h5 class="card-title">{{ d.date }}</h5>
       <img
         src="{{ d.hourly[1].weatherIconUrl[0].value }}"
