@@ -1,16 +1,10 @@
-import {Routes , RouterModule} from '@angular/router';
-import { NgModule } from '../../node_modules/@angular/core';
-import { LoginComponent } from './login/login.component';
-import { WeatherDetailComponent } from './weather-detail/weather-detail.component';
+import { Routes, RouterModule } from "@angular/router";
+import { NgModule } from "../../node_modules/@angular/core";
 
-const routes:Routes=[
-    {path:'login' , component:LoginComponent },
-    {path:'' ,redirectTo:"/login",pathMatch:'full' },
-    {path:'weather-detail', component: WeatherDetailComponent}
-  ];
+const routes: Routes = [];
 
-  @NgModule({
-      imports:[RouterModule.forRoot(routes)],
-      exports:[RouterModule]
-  })
-  export class AppRoutingModule{}
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}

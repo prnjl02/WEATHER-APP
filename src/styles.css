@@ -1,8 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
-.bg-img {
-  background-image: url("src/app/login/Hopetoun_falls.jpg");
-  background-size: cover;
-  /* height:100%;
-  width:100%; */
-  margin: -20px -6px;
+body {
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #cb6eb3,
+    #c273c0,
+    #b778cd,
+    #a87ed9,
+    #8a8eec,
+    #629ef9,
+    #1dacff,
+    #00c4ff,
+    #00d9f9,
+    #00ece5,
+    #5ffbcc
+  );
+  min-height: 700px;
 }
+
+/* background: rgb(238, 174, 202);
+      background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      ); */
