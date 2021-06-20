@@ -8,6 +8,7 @@
     <button type="submit" class="search" (click)="input(city_name.value)">
       Search
     </button>
+    <div class="loader heading" *ngIf="showSpinner"></div>
   </div>
 </div>
 <h5 class="cityName">{{ query }}</h5>

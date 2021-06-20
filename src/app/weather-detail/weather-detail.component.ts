@@ -16,11 +16,13 @@ export class WeatherDetailComponent implements OnInit {
 
   exceptionMessage: string = "";
   showExceptionMessage: boolean = false;
+  showSpinner: boolean = false;
 
   constructor(private _weatherdetailservice: WeatherDetailService) {}
 
   ngOnInit() {}
   input(city_name: string) {
+    this.showSpinner = true;
     console.log(city_name);
     this._weatherdetailservice.getWeatherDetails(city_name).subscribe(
       (data) => {
@@ -30,9 +32,11 @@ export class WeatherDetailComponent implements OnInit {
           this.fulldata = data.weather;
           this.query = data.request[0].query;
           console.log("data ", data);
+          this.showSpinner = false;
         } else {
           this.showExceptionMessage = true;
           this.exceptionMessage = "Incorrect Location entered";
+          this.showSpinner = false;
         }
       },
       (error) => console.log("error")
