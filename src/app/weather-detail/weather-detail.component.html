@@ -13,7 +13,7 @@
 <h5 class="cityName">{{ query }}</h5>
 <h5 class="cityName" *ngIf="showExceptionMessage">{{ exceptionMessage }}</h5>
 <div class="cardSectionContainer" *ngFor="let d of fulldata">
-  <div class="card .d-flex cardLayout">
+  <div class="card .d-flex cardLayout" *ngIf="!showExceptionMessage">
     <div class="card-body cardItemLayout">
       <h5 class="card-title">{{ d.date }}</h5>
       <img
