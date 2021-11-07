@@ -8,7 +8,7 @@ import { map } from "rxjs/operators";
 })
 export class WeatherDetailService {
   public _url: string =
-    "https://api.worldweatheronline.com/premium/v1/weather.ashx?key=73f58128c19a4d748bf95142211407&q=";
+    "https://api.worldweatheronline.com/premium/v1/weather.ashx?key=2efe0a4e63d44b26b5693446210711&q=";
 
   constructor(private _http: HttpClient) {}
 
